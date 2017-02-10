@@ -1,0 +1,27 @@
+Benchmarking of the Oxford Nanopore MinION sequencing for quantitative and qualitative assessment of cDNA populations
+http://www.nature.com/articles/srep31602
+
+Performance-Vergleich von MinION cDNA Sequencing (Sequencing-Präzision und Konzentrationsmessung)
+Referenzsequencer: Illumina, PacBio
+
+Datensatz:
+1. "ERCC RNA Spike-In mix" (92 bekannte säugertypische Transkripte mit bekannter Konzentration)
+   Replikat A: MinION Protokoll r7   Basecaller r7        2D
+   Replikat B: MinION Protokoll r7.3 Basecaller r7.X.1.12 2D
+   Replikat C: MinION Protokoll r7.3 Basecaller r7.X.1.16 2D
+   Replikat D: MinION Protokoll r7.3 Basecaller r7.X.1.16 2D
+2. HEK-293 Zelllinie (Homo sapiens)
+   Replikat A: MinION Protokoll r7.3 Basecaller r7.X.1.16 2D
+
+Gute Punkte:
+1. Abundance-Werte korrellieren zu 98% mit den Originalwerten und schlagen damit Illumina (97%) und PacBio (94%)
+2. Bei Template-Strands sogar 99% (Unabhängig von der Softwareversion)
+3. Alle sequenzierte Daten auf ENA, Accession Number PRJEB11818 (http://www.ebi.ac.uk/ena/data/search?query=PRJEB11818)
+
+Probleme:
+1. Nur eine Kondition
+2. Praktisch keine Replikate (In Datensatz 1 wurde fast jedes Replikat mit einem anderen Basecaller sequenziert)
+3. Altes cDNA-Protokoll, nicht neues RNA-Protokoll
+4. Präzision der low-quality-reads liegt bei etwa 60-70%, bei HEK-239 sogar niedriger
+5. Präzision der high-quality-reads liegt auch nur bei 70-80%, bei HEK-239 sogar niedriger
+6. Anzahl der high-quality-reads variiert je nach Basecaller und Datensatz stark (1-15% aller sequenzierten Reads)
