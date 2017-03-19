@@ -10,9 +10,9 @@ Task 1.1 (Pipeline anpassen) (1 U):
 
 Die für unser Projekt-Blockteil relevante Aufgaben beschränken sich auf:
 
-a) Exercise 1: Task 1
-b) Exercise 2: Task 1 – 4 
-c) Exercise 3: Task 1 – 6
+ - Exercise 1: Task 1
+ - Exercise 2: Task 1 – 4 
+ - Exercise 3: Task 1 – 6
 
 Diese zunächst separate Aufgabenteile fügen wir zu einer zusammenhängenden automatisierten Pipeline
 zusammen. Außerdem erzeugen wir eine Version der Pipeline, die das Streaming-Interface von Unix 
@@ -31,7 +31,7 @@ reproduzieren und validieren.
 Dazu finden wir im ENA (Accession Number: PRJEB 11818) (http://www.ebi.ac.uk/ena/data/view/PRJEB11818) 
 das Sequencing-Projekt mit den zugehörigen Reads für MinION und Illumina MiSeq. Weiter benötigen wir 
 das GTF- und Fasta-File des menschlichen Genoms, welches wir bereits im Übungsteil verwendet haben: 
-/home/proj/biosoft/praktikum/genprakt/assignment/a1/data/Homo_sapiens.GRCh37.75.gtf
+/home/proj/biosoft/praktikum/genprakt/assignment/a1/data/Homo_sapiens.GRCh37.75.gtf und 
 /home/proj/biosoft/praktikum/genprakt/genome/Homo_sapiens.GRCh37.75.dna.toplevel.fa
 
 Output: Annotierte / Alignierte Reads (MinION und Illumina)
