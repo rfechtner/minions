@@ -19,7 +19,7 @@ public class ReadGroup extends LinkedList<ChainedRead> {
       
       if(nextLine.length() == 0) {
         break;
-      } else if(nextLine.startsWith("@")) {
+      } else if(nextLine.startsWith("@") && chainedRead.size() > 0) {
         chainedRead.add("");
         add(new ChainedRead(chainedRead));
         chainedRead.clear();
