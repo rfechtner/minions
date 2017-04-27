@@ -37,6 +37,10 @@ public class ReadGroup extends LinkedList<ChainedRead> {
     return false;
   }
   
+  public String getReadName() {
+    return readName;
+  }
+  
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder("#").append(readName).append("\n");
