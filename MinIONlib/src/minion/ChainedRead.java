@@ -63,6 +63,6 @@ public class ChainedRead
             .append("<").append(chain.getGeneStart()).append("\n")
             .append("<").append(chain.getGeneStop()).append("\n"));
 
-    return sb.append("\n").toString();
+    return sb.toString();
   }
 }
